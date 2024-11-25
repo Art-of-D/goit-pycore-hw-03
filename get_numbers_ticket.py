@@ -32,11 +32,9 @@ def get_numbers_ticket(min=1, max=1000, values=1):
     return []
   elif min < 1:
     return []
-  elif max > min and max > 1000:
+  elif max > 1000:
     return []
-  elif values < 0:
-    return []
-  elif values > max:
+  elif values < min or values > max:
     return []
   
   ticket  = set()
